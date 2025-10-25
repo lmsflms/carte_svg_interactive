@@ -1,27 +1,15 @@
-const svgObject = document.getElementById("map");
-svgObject.addEventListener('load', () => {
-    const svgMap = svgObject.contentDocument;
-    
-    const greenland = svgMap.getElementById("greenland");
-    const blueland = svgMap.getElementById("blueland");
+const greenland = document.getElementById("Greenland");
+const blueland = document.getElementById("Blueland");
+const territoryText = document.getElementById("territoryText");
 
-    outlinePaths(greenland.querySelectorAll("path"));
+outlinePaths(greenland);
+outlinePaths(blueland);
 
-    outlinePaths(blueland.querySelectorAll("path"));
-});
-
-function outlinePaths(group){ //utiliser une classe css
-    group.forEach(path => {
-        path.onmouseover = () => {
-            group.forEach(p => {
-                p.style.strokeWidth = "0.5";
-            });
-        };
-
-        path.onmouseout = () => {
-            group.forEach(p => {
-                p.style.strokeWidth = "0";
-            });
-        };
-    });
+function outlinePaths(group) {
+	const paths = group.querySelectorAll("path");
+	paths.forEach(path => {
+		path.onmouseover = () => {group.classList.add("highlight"); territoryText.style.visibility = "visible"; territoryText.textContent=group.id};
+		path.onmouseout  = () => {group.classList.remove("highlight"); territoryText.style.visibility = "hidden"};
+		//path.onclick = () => {group.classList.add("select")};
+	});
 }
