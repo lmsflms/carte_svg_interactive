@@ -13,17 +13,36 @@ p {
     visibility: hidden;
 }
 
-svg {
-    border: 2px dotted red;
-    width: 80%;
-    height: 80%;
+.mapDiv {
+  position: relative;
+  width: 80vw;
+  max-width: 900px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
+
+.mapDiv img,
+.mapDiv svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.mapDiv .pngMap{
+    z-index: -1;
+}
+
+.mapDiv .pngMapOverlay{
+    z-index: 1;
+}
+
+.mapDiv svg{
+    z-index: 2;
 }
 
 .highlight path {
     stroke-width: 0.5 !important;
-}
-
-/*
-.select path {
-    fill: red !important;
 }
