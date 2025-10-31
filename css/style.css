@@ -21,7 +21,6 @@ p {
   aspect-ratio: 4 / 3;
 }
 
-
 .mapDiv img,
 .mapDiv svg {
     position: absolute;
@@ -44,5 +43,5 @@ p {
 }
 
 .highlight path {
-    stroke-width: 0.5 !important;
+    stroke-width: 3 !important;
 }

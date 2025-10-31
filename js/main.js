@@ -1,9 +1,19 @@
-const keirstand = document.getElementById("Keirstand");
-const svalkuschtania = document.getElementById("Svalkuschtania");
+const A = document.getElementById("A");
+const B = document.getElementById("B");
+const C = document.getElementById("C");
+const D = document.getElementById("D");
+const E = document.getElementById("E");
+const F = document.getElementById("F");
+
 const territoryText = document.getElementById("territoryText");
 
-outlinePaths(keirstand);
-outlinePaths(svalkuschtania);
+outlinePaths(A);
+outlinePaths(B);
+outlinePaths(C);
+outlinePaths(D);
+outlinePaths(E);
+outlinePaths(F);
+
 
 function outlinePaths(group) {
 	const paths = group.querySelectorAll("path");
