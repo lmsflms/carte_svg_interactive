@@ -11,11 +11,12 @@ body {
 p {
     font-size: xx-large;
     visibility: hidden;
+    margin: 0;
 }
 
 .mapDiv {
   position: relative;
-  width: 80vw;
+  width: 100vw;
   max-width: 900px;
   height: auto;
   aspect-ratio: 4 / 3;
@@ -43,5 +44,13 @@ p {
 }
 
 .highlight path {
-    stroke-width: 3 !important;
+    stroke-width: 4 !important;
+    stroke: white !important;
+}
+
+.selected path {
+    stroke-width: 4 !important;
+    stroke: white !important;
+    fill: rgba(255, 255, 255, 0.3) !important;
+    filter: url(#innerShadow) !important;
 }
