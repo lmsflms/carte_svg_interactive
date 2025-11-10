@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Volkhov;
+  src: url(../font/Volkhov-Regular.ttf);
+}
+
 body {
     margin: 0;
     display: flex;
@@ -12,15 +17,26 @@ p {
     font-size: xx-large;
     visibility: hidden;
     margin: 0;
+    font-family: Volkhov;
 }
 
 .mapDiv {
     position: relative;
-    width: 100vw;
-    max-width: 900px;
-    height: auto;
-    aspect-ratio: 4 / 3;
+    height: 90vh;
+    width: 90vh;
+    max-width: 90vw;
+    max-height: 90vh;
     user-select: none;
+    border: solid red 0.1rem;
+}
+
+.mapDiv img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .mapDiv img,
@@ -29,29 +45,40 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .mapDiv .pngMap{
     z-index: -1;
 }
 
-.mapDiv .pngMapOverlay{
-    z-index: 1;
+.mapDiv .pngMapOverlay {
+    z-index: 3;
+    pointer-events: none;
 }
 
-.mapDiv svg{
+.mapDiv svg {
     z-index: 2;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.territory path {
+    pointer-events: auto;
 }
 
 .highlight path {
-    stroke-width: 4 !important;
-    stroke: white !important;
+    fill: #FFF8CD !important;
+    stroke-width: 1pt !important;
+    stroke: #888B78 !important;
 }
 
 .selected path {
-    stroke-width: 4 !important;
-    stroke: white !important;
-    fill: rgba(255, 255, 255, 0.3) !important;
-    filter: url(#innerShadow) !important;
+    fill: #FEDC49 !important;
+    stroke-width: 1pt !important;
+    stroke: black !important;
 }

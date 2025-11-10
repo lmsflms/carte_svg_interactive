@@ -1,51 +1,61 @@
-const groups = document.querySelectorAll(".territory");
-let selectedGroup = null;
+fetch("map/map.svg")
+    .then(r => r.text())
+    .then(svgData => {
+        document.getElementById("mapDiv").insertAdjacentHTML("beforeend", svgData);
+        loadMap();
+    })
 
-groups.forEach(group => outlinePaths(group));
+function loadMap(){
+    const groups = document.querySelectorAll(".territory");
+    let selectedGroup = null;
 
-function outlinePaths(group) {
-    const paths = group.querySelectorAll("path");
+    groups.forEach(group => outlinePaths(group));
 
-    paths.forEach(path => {
-        path.onmouseover = () => {
-            group.classList.add("highlight");
-        };
+    function outlinePaths(group) {
+        const paths = group.querySelectorAll("path");
 
-        path.onmouseout = () => {
-            group.classList.remove("highlight");
-        };
+        paths.forEach(path => {
+            path.onmouseover = () => {
+                group.classList.add("highlight");
+            };
 
-        path.onclick = (e) => {
-            e.preventDefault();
-            if (selectedGroup && selectedGroup !== group) {
-                selectedGroup.classList.remove("selected");
-                territoryText.style.visibility = "hidden";
-            }
-            group.classList.add("selected");
-            territoryText.style.visibility = "visible";
-            territoryText.textContent = group.id;
+            path.onmouseout = () => {
+                group.classList.remove("highlight");
+            };
 
-            selectedGroup = group;
+            path.onclick = (e) => {
+                e.preventDefault();
+                if (selectedGroup && selectedGroup !== group) {
+                    selectedGroup.classList.remove("selected");
+                    territoryText.style.visibility = "hidden";
+                }
+                group.classList.add("selected");
+                territoryText.style.visibility = "visible";
+                territoryText.textContent = group.id;
 
-            group.parentNode.appendChild(group);
-        };
+                selectedGroup = group;
+
+                group.parentNode.appendChild(group);
+            };
+        });
+    }
+    
+    document.addEventListener("contextmenu", (e) => {
+        e.preventDefault();
+        if (selectedGroup) {
+            selectedGroup.classList.remove("selected");
+            territoryText.style.visibility = "hidden";
+            selectedGroup = null;
+        }
     });
 }
- 
-document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-    if (selectedGroup) {
-        selectedGroup.classList.remove("selected");
-        territoryText.style.visibility = "hidden";
-        selectedGroup = null;
-    }
-});
 
 let map = 0;
+var numMap = 1;
 
 function changeMap(){
     map++;
-    map = map % 2;
+    map = map % numMap;
 
     const img = document.querySelector('.pngMap');
     img.src = `map/${map}.png`;
