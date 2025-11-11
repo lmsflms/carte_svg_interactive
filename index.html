@@ -8,16 +8,24 @@
 </head>
 
 <body>
+	<div class="content">
+		<div class="left-sidebar"></div>
 
-	<p id="territoryText">-</p>
-	<!--<button onclick="changeMap()">>>></button>-->
+		<div class="map-container">
+			<div class="map-topbar">
+				<p id="territory-label">-</p>
+			</div>
 
-	<div class="mapDiv" id="mapDiv">
-		<img src="map/0.png" class="pngMap">
-		<!-- svg ajouté ici -->
-		<img src="map/map_test_overlay.png" class="pngMapOverlay">
+			<div class="map-view" id="mapView">
+				<img src="map/0.png" class="map-base">
+				<!--SVG ici-->
+		    	<img src="map/map_overlay.png" class="map-overlay">
+			</div>
+		</div>
+
+		<div class="right-sidebar"></div>
 	</div>
-
-    <script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 </body>
+
 </html>
