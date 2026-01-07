@@ -1,0 +1,156 @@
+[
+  {
+    "id": "ver",
+    "name": "Verano",
+    "population": [100000, 120000, 140000, 110000],
+    "army": [18000, 21000, 19500, 20000],
+    "wealth": [2400000, 2700000, 2650000, 2500000],
+    "capital": "Solmere",
+    "government": [
+        { "party": "Party A", "seats": 40, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 35, "color": "#3fb551" },
+        { "party": "Party C", "seats": 25, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 25, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "sil",
+    "name": "Silion",
+    "population": [85000, 90000, 95000, 88000],
+    "army": [12000, 13000, 11000, 12500],
+    "wealth": [1900000, 2000000, 1850000, 1950000],
+    "capital": "Ilthar",
+    "government": [
+        { "party": "Party A", "seats": 35, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 40, "color": "#3fb551" },
+        { "party": "Party C", "seats": 25, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 25, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "pra",
+    "name": "Prasko",
+    "population": [76000, 80000, 82000, 78000],
+    "army": [10000, 9500, 9700, 11000],
+    "wealth": [1500000, 1600000, 1580000, 1620000],
+    "capital": "Draven",
+    "government": [
+        { "party": "Party A", "seats": 20, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 45, "color": "#3fb551" },
+        { "party": "Party C", "seats": 40, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 20, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "nur",
+    "name": "Nurvik",
+    "population": [120000, 125000, 128000, 122000],
+    "army": [22000, 23000, 24000, 21000],
+    "wealth": [2800000, 3000000, 2950000, 2900000],
+    "capital": "Ruskholm",
+    "government": [
+        { "party": "Party A", "seats": 25, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 35, "color": "#3fb551" },
+        { "party": "Party C", "seats": 25, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 40, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "alo",
+    "name": "Aloura-Lestra",
+    "population": [130000, 132000, 135000, 134000],
+    "army": [25000, 25500, 26000, 25800],
+    "wealth": [3200000, 3400000, 3450000, 3350000],
+    "capital": "Lestryn",
+    "government": [
+        { "party": "Party A", "seats": 40, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 25, "color": "#3fb551" },
+        { "party": "Party C", "seats": 25, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 35, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "dah",
+    "name": "Dahran",
+    "population": [95000, 97000, 93000, 96000],
+    "army": [14000, 14500, 13500, 14200],
+    "wealth": [2100000, 2150000, 2200000, 2050000],
+    "capital": "Morhad",
+    "government": [
+        { "party": "Party A", "seats": 40, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 35, "color": "#3fb551" },
+        { "party": "Party C", "seats": 25, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 25, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "bar",
+    "name": "Baruq",
+    "population": [78000, 79000, 81000, 77000],
+    "army": [9000, 9500, 8700, 8800],
+    "wealth": [1600000, 1550000, 1580000, 1620000],
+    "capital": "Quaris",
+    "government": [
+        { "party": "Party A", "seats": 40, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 25, "color": "#3fb551" },
+        { "party": "Party C", "seats": 35, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 25, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "fle",
+    "name": "Flerina e Prina",
+    "population": [88000, 91000, 89000, 87000],
+    "army": [11500, 11800, 11200, 12000],
+    "wealth": [1750000, 1820000, 1800000, 1780000],
+    "capital": "Prinalis",
+    "government": [
+        { "party": "Party A", "seats": 40, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 35, "color": "#3fb551" },
+        { "party": "Party C", "seats": 25, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 25, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "cor",
+    "name": "Cormello",
+    "population": [112000, 114000, 116000, 113000],
+    "army": [20000, 20500, 19800, 20200],
+    "wealth": [2600000, 2700000, 2650000, 2580000],
+    "capital": "Velmor",
+    "government": [
+        { "party": "Party A", "seats": 35, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 35, "color": "#3fb551" },
+        { "party": "Party C", "seats": 40, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 25, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "tav",
+    "name": "Tavini",
+    "population": [72000, 73000, 75000, 74000],
+    "army": [8000, 8500, 8200, 8700],
+    "wealth": [1300000, 1350000, 1320000, 1380000],
+    "capital": "Orren",
+    "government": [
+        { "party": "Party A", "seats": 25, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 25, "color": "#3fb551" },
+        { "party": "Party C", "seats": 40, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 35, "color": "#f5be27" }
+    ]
+  },
+  {
+    "id": "tel",
+    "name": "Telin",
+    "population": [105000, 107000, 106000, 108000],
+    "army": [16000, 16200, 15800, 16400],
+    "wealth": [2250000, 2300000, 2280000, 2320000],
+    "capital": "Eldara",
+    "government": [
+        { "party": "Party A", "seats": 40, "color": "#bd1c1c" },
+        { "party": "Party B", "seats": 25, "color": "#3fb551" },
+        { "party": "Party C", "seats": 25, "color": "#2d7aba" },
+        { "party": "Party D", "seats": 35, "color": "#f5be27" }
+    ]
+  }
+]

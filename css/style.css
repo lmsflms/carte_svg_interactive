@@ -20,19 +20,29 @@ body {
 	align-items: end;
 }
 
+.territory-flag{
+	width: 75%;
+	border: solid black 1px;
+	height: auto;
+}
+
 .left-sidebar,
 .right-sidebar {
 	width: 20%;
 	height: 100%;
 	border: solid black 1px;
 	background-color: white;
+	text-align: center;
 }
 
 p {
 	font-size: xx-large;
-	visibility: hidden;
 	margin: 0;
 	font-family: Volkhov;
+}
+
+.territory-label {
+	visibility: hidden;
 }
 
 .map-view img,
@@ -97,4 +107,50 @@ p {
 	aspect-ratio: 1 / 1;
 	width: auto;
 	position: relative;
+}
+
+table{
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+  	width: 100%;
+	border-spacing: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+th{
+	text-align: left;
+	padding-left: 1rem;
+}
+
+td{
+	text-align: right;
+	padding-right: 1rem;
+}
+
+tr{
+	height: 2em;
+}
+
+tr:nth-of-type(odd){
+	background-color: #EFF5FA;
+}
+
+td.increase::after { background-image: url("../assets/icons/increase.png"); }
+td.decrease::after { background-image: url("../assets/icons/decrease.png"); }
+
+td.increase::after, td.decrease::after {
+	vertical-align: baseline;
+    content: "";
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 0.1em;
+}
+
+.chart-container {
+    width: 100%;
+    height: 30%;
+	pointer-events: none;
 }
