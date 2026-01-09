@@ -9,15 +9,16 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #EFF5FA;
+	background-image: url(../assets/background/bg.png);
 }
 
 .content {
 	width: 85vw;
 	height: 95vh;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: end;
+	gap: 5vh;
 }
 
 .territory-flag{
@@ -26,19 +27,33 @@ body {
 	height: auto;
 }
 
+.left-sidebar{
+	display: none;
+}
+
 .left-sidebar,
 .right-sidebar {
 	width: 20%;
 	height: 100%;
 	border: solid black 1px;
-	background-color: white;
 	text-align: center;
+}
+
+.blue-panel{
+	background-color: #313844;
+	/*box-shadow: inset 0 0 1em #20232A;*/
+	box-shadow: inset 0 0 0 0.1em #20232A,
+				inset 0 0 0 0.18em #4F6882,
+				inset 0 0 1em 1em #20232A;
+	border: 1px solid #191C20;
 }
 
 p {
 	font-size: xx-large;
 	margin: 0;
 	font-family: Volkhov;
+	color: white;
+	text-shadow: 2px 2px 4px black;
 }
 
 .territory-label {
@@ -91,15 +106,12 @@ p {
 	justify-content: flex-start;
 	height: 100%;
 	width: auto;
-	border: solid black 1px;
 }
 
 .map-topbar{
 	width: 100%;
 	height: 5%;
 	text-align: center;
-	border-bottom: solid black 1px;
-	background-color: white;
 }
 
 .map-view {
@@ -110,11 +122,11 @@ p {
 }
 
 table{
-	border-bottom: 1px solid;
-	border-top: 1px solid;
   	width: 100%;
 	border-spacing: 0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #BBBBBB;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
 }
 
 th{
@@ -132,7 +144,7 @@ tr{
 }
 
 tr:nth-of-type(odd){
-	background-color: #EFF5FA;
+	background-color: rgba(0,0,0,0.2);
 }
 
 td.increase::after { background-image: url("../assets/icons/increase.png"); }
