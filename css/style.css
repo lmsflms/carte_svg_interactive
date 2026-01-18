@@ -1,7 +1,3 @@
-@font-face {
-	font-family: Volkhov;
-	src: url(../font/Volkhov-Regular.ttf);
-}
 
 body {
 	margin: 0;
@@ -9,11 +5,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../assets/background/bg.png);
+	background-color: #1A222D;
 }
 
 .content {
-	width: 85vw;
 	height: 95vh;
 	display: flex;
 	justify-content: center;
@@ -21,43 +16,10 @@ body {
 	gap: 5vh;
 }
 
-.territory-flag{
-	width: 75%;
-	border: solid black 1px;
-	height: auto;
-}
-
-.left-sidebar{
-	display: none;
-}
-
-.left-sidebar,
-.right-sidebar {
-	width: 20%;
+.map-view {
+	position: relative;
 	height: 100%;
-	border: solid black 1px;
-	text-align: center;
-}
-
-.blue-panel{
-	background-color: #313844;
-	/*box-shadow: inset 0 0 1em #20232A;*/
-	box-shadow: inset 0 0 0 0.1em #20232A,
-				inset 0 0 0 0.18em #4F6882,
-				inset 0 0 1em 1em #20232A;
-	border: 1px solid #191C20;
-}
-
-p {
-	font-size: xx-large;
-	margin: 0;
-	font-family: Volkhov;
-	color: white;
-	text-shadow: 2px 2px 4px black;
-}
-
-.territory-label {
-	visibility: hidden;
+	aspect-ratio: 1 / 1;
 }
 
 .map-view img,
@@ -89,14 +51,14 @@ p {
 
 .highlight path {
 	fill: #FFF8CD !important;
-	stroke-width: 1pt !important;
 	stroke: #888B78 !important;
+	stroke-width: 1pt !important;
 }
 
 .selected path {
 	fill: #FEE561 !important;
-	stroke-width: 1pt !important;
 	stroke: #191507 !important;
+	stroke-width: 1pt !important;
 }
 
 .map-container {
@@ -105,64 +67,4 @@ p {
 	align-items: center;
 	justify-content: flex-start;
 	height: 100%;
-	width: auto;
-}
-
-.map-topbar{
-	width: 100%;
-	height: 5%;
-	text-align: center;
-}
-
-.map-view {
-	height: 95%;
-	aspect-ratio: 1 / 1;
-	width: auto;
-	position: relative;
-}
-
-table{
-  	width: 100%;
-	border-spacing: 0;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	color: #BBBBBB;
-	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
-}
-
-th{
-	text-align: left;
-	padding-left: 1rem;
-}
-
-td{
-	text-align: right;
-	padding-right: 1rem;
-}
-
-tr{
-	height: 2em;
-}
-
-tr:nth-of-type(odd){
-	background-color: rgba(0,0,0,0.2);
-}
-
-td.increase::after { background-image: url("../assets/icons/increase.png"); }
-td.decrease::after { background-image: url("../assets/icons/decrease.png"); }
-
-td.increase::after, td.decrease::after {
-	vertical-align: baseline;
-    content: "";
-    display: inline-block;
-    width: 0.85em;
-    height: 0.85em;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 0.1em;
-}
-
-.chart-container {
-    width: 100%;
-    height: 30%;
-	pointer-events: none;
 }

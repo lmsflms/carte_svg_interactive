@@ -5,49 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/style.css" rel="stylesheet">
-
-	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 </head>
 
 <body>
 	<div class="content">
-		<div class="left-sidebar"></div>
-
 		<div class="map-container">
-			<div class="map-topbar blue-panel">
-				<p>Day 52</p>
-			</div>
-
 			<div class="map-view" id="mapView">
 				<img src="map/0.png" class="map-base">
-				<!--SVG ici-->
 		    	<img src="map/map_overlay.png" class="map-overlay">
-			</div>
-		</div>
-
-		<div class="right-sidebar blue-panel">
-			<p id="territoryLabel"></p>
-			<img id="territoryFlag" class="territory-flag">
-			<table>
-				<tr>
-					<th>Capital</th>
-					<td id="capital-val">val</td>
-				</tr>
-				<tr>
-					<th>Population</th>
-					<td id="population-val">val</td>
-				</tr>
-				<tr>
-					<th>Army</th>
-					<td id="army-val">val</td>
-				</tr>
-				<tr>
-					<th>Wealth</th>
-					<td id="wealth-val">val</td>
-				</tr>
-			</table>
-			<div class="chart-container">
-				<div id="assemblyCompositionChart"></div>
 			</div>
 		</div>
 	</div>
